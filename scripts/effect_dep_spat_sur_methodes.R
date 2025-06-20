@@ -1,6 +1,8 @@
 library(readxl)
 library(dplyr)
-library(FSA)
+library(FSA)        
+library(rstatix)   
+library(stringr)
 
 # 2. Chargement des données
 data <- read_excel("D:/Courses/DRAFT - Copy/resultats_combines.xlsx")
@@ -31,12 +33,6 @@ for (m in modeles) {
 
 
 ######
-# Chargement des packages
-library(readxl)
-library(dplyr)
-library(FSA)         # Pour le test de Dunn
-library(rstatix)     # Pour la correction de p-values
-library(stringr)
 
 # Lecture des données
 data <- read_excel("resultats_combines.xlsx")
